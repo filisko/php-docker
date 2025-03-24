@@ -1,0 +1,27 @@
+name: "framework.dev"
+services:
+  php:
+    build:
+      context: ./
+      dockerfile: ./containers/php/Dockerfile
+    volumes:
+      - ../../:/var/www/html
+      - ./containers/php/www.conf:/etc/php/8.4/fpm/pool.d/www.conf:ro
+      - ./containers/php/php-fpm.ini:/usr/local/etc/php/conf.d/php.ini:ro
+    environment:
+      URL: "https://framework.dev/"
+
+  nginx:
+    build:
+        context: ./
+        dockerfile: ./containers/nginx/Dockerfile
+    ports:
+        - "443:443"
+    volumes:
+        - ./containers/nginx:/nginx
+    depends_on:
+        - php
+    environment:
+        SERVER_NAME: "framework.dev"
+        PUBLIC_PATH: "/var/www/html/public"
+    entrypoint: /nginx/entrypoint.sh

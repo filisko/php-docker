@@ -1,0 +1,3 @@
+.idea
+docker/setup/containers/nginx/certs/*
+!docker/setup/containers/nginx/certs/.gitkeep
