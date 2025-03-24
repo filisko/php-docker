@@ -8,7 +8,7 @@ This repository contains a setup for running PHP with FPM and Nginx. Everything 
 
 It uses `mkcert`  for generating the SSL certificates so you need to have this before hand. This allows you to work with HTTPS in your local environment. 
 
-Also, it will add the domain to **/etc/hosts** if you allow it to when the prompt pops up. This is required either way.
+Also, it will add the domain to **/etc/hosts** (of you allow it). This is required either way.
 
 In Ubuntu you can install it like this:
 
