@@ -1,6 +1,6 @@
 # PHP docker
 
-This repository contains a setup for running PHP with FPM and Nginx. Everything is preconfigured to serve as a base for your development.
+This repository contains a setup for running PHP 8.4 with FPM and Nginx. Everything is preconfigured to serve as a base for your development.
 
 ### Commands:
 
