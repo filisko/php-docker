@@ -21,3 +21,4 @@ sudo apt-get -y install mkcert
 - `./docker/down.sh`: Down down down.
 - `./docker/resatart.sh`: Restarts your containers.
 
+After you built and "upped" your containers, the domain should be reachable with HTTPS (e.g.: https://hello.dev).
