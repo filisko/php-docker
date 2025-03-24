@@ -4,7 +4,7 @@ This repository contains a setup for running PHP 8.4 with FPM and Nginx with HTT
 
 ### Commands:
 
-- `./name.sh hello.dev`: Sets your domain as the configured one for nginx and SSL certificates.
+- `./name.sh hello.dev`: Sets a custom domain as the configured one for nginx and SSL certificates.
 
 It uses `mkcert`  for generating the SSL certificates so you need to have this before hand. This allows you to work with HTTPS in your local environment. 
 
