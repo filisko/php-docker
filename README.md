@@ -6,11 +6,12 @@ This repository contains a setup for running PHP with FPM and Nginx. Everything 
 
 - `./name.sh hello.dev`: Sets your domain as the configured one for nginx and SSL certificates.
 
-This allows you to work with HTTPS in your local environment. It uses `mkcert`  for generating the SSL certificates so you need to have it in your system.
+It uses `mkcert`  for generating the SSL certificates so you need to have this before hand. This allows you to work with HTTPS in your local environment. 
 
-Also, it will add the domain to **/etc/hosts** if you allow it (note that this is a required either way).
+Also, it will add the domain to **/etc/hosts** if you allow it to when the prompt pops up. This is required either way.
 
 In Ubuntu you can install it like this:
+
 ```sh
 sudo apt-get -y install mkcert
 ```
