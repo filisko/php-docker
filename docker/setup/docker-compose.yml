@@ -1,4 +1,4 @@
-name: "framework.dev"
+name: "hello.dev"
 services:
   php:
     build:
@@ -9,7 +9,7 @@ services:
       - ./containers/php/www.conf:/etc/php/8.4/fpm/pool.d/www.conf:ro
       - ./containers/php/php-fpm.ini:/usr/local/etc/php/conf.d/php.ini:ro
     environment:
-      URL: "https://framework.dev/"
+      URL: "https://hello.dev/"
 
   nginx:
     build:
@@ -22,6 +22,6 @@ services:
     depends_on:
         - php
     environment:
-        SERVER_NAME: "framework.dev"
+        SERVER_NAME: "hello.dev"
         PUBLIC_PATH: "/var/www/html/public"
     entrypoint: /nginx/entrypoint.sh
