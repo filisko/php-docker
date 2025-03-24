@@ -12,8 +12,8 @@ if [[ -z "$domain" ]]; then
     exit 1
 fi
 
-sed -i "s/test.dev/$domain/g" $compose
-sed -i "s/test.dev/$domain/g" $certs
+sed -i "s/hello.dev/$domain/g" $compose
+sed -i "s/hello.dev/$domain/g" $certs
 
 echo "generating ssl certificates"
 
