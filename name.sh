@@ -29,7 +29,7 @@ if [[ $response = "yes" || $response = "y" ]]; then
 fi
 
 echo ""
-echo "Everything was setup for $domain, you can build and lift your container"
+echo "Everything was setup for $domain, you can build and lift your containers"
 echo ""
 echo "./docker/build.sh"
 echo "./docker/up.sh [optional args such as: -d]"
