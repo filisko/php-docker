@@ -1,6 +1,6 @@
 # PHP docker
 
-This repository contains a setup for running PHP 8.4 with FPM and Nginx with HTTPS. Everything is preconfigured to serve as a base for your development.
+This repository contains a setup for running PHP 8.4 with FPM and Nginx with HTTPS + custom domain nin your local environment. Everything is preconfigured to serve as a base for your development.
 
 ### Commands:
 
@@ -16,7 +16,7 @@ In Ubuntu you can install it like this:
 sudo apt-get -y install mkcert
 ```
 
-- `./docker/setup/build.sh`: Builds docker-compose.yaml (feel free to modify this file).
+- `./docker/setup/build.sh`: Builds docker-compose.yaml.
 - `./docker/up.sh [args]`: Lifts your docker compose. You may want to do it in detached mode: `./docker/up.sh -d`
 - `./docker/down.sh`: Down down down.
 - `./docker/resatart.sh`: Restarts your containers.
