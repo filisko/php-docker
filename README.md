@@ -1,6 +1,6 @@
 # PHP docker
 
-This repository contains a setup for running PHP 8.4 with FPM and Nginx with HTTPS + custom domain nin your local environment. Everything is preconfigured to serve as a base for your development.
+This repository contains a setup for running PHP 8.4 with FPM and Nginx with HTTPS + custom domain in your local environment. Everything is preconfigured to serve as a base for your development.
 
 ### Commands:
 
